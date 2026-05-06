@@ -1,5 +1,6 @@
 > Make AI Writing Better for Everyone
-
+## korean_english_writing
+이 저장소는 [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)의 중/영 버전을 참고하여, 한국어 사용 연구자들이 바로 활용할 수 있도록 한/영 버전으로 번역 및 현지화한 프로젝트입니다.
 ## 📖 왜 이 프로젝트를 만들었나
 
 같은 교정 prompt를 세 번째로 디버깅하고 있을 때, 옆 연구실 사람은 이미 준비된 템플릿으로 논문 세 편을 손봤을지도 모릅니다.
@@ -824,4 +825,10 @@ Skills가 `.claude/skills/`에 설치되면 Cursor 시작 시 자동 탐지되�
 | Word 템플릿 기반 투고 원고 작성 | docx | 저널/학회 제공 `.docx` 템플릿, 제목/저자/초록/섹션 본문 | "이 저널 Word 템플릿에 내 제목/초록/본문 채워 줘" "템플릿에서 저자 정보와 Section 1–4 교체" | 템플릿 형식에 맞는 `.docx` 원고(압축 해제 후 자리값 스크립트 치환 또는 OOXML 편집 후 재패키징) |
 | Word 원고 수정 제안(추적 변경) | docx | 작성된 `.docx` 논문 또는 리뷰 코멘트 | "redlining 흐름으로 수정 필요 부분 표시해 줘" "이 부분 tracked changes로 바꿔 줘: 원문 삭제 + 새 문장 삽입" | 수정 이력이 표시된 `.docx`(변경 지점만 표시, 저자 수락/거부 용이) |
 
-[![Star History Chart](https://api.star-history.com/svg?repos=Leey21/awesome-ai-research-writing&type=Date)](https://star-history.com/#Leey21/awesome-ai-research-writing&Date)
+---
+
+## Reference / Acknowledgement
+
+이 저장소는 [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)의 중/영 버전을 참고하여, 한국어 사용 연구자들이 바로 활용할 수 있도록 한/영 버전으로 번역 및 현지화한 프로젝트입니다.
+
+실전적인 AI 논문 작성 prompt와 workflow를 정리해 공개해 주신 원저자분들께 감사드립니다. 본 저장소는 원 프로젝트의 핵심 취지를 유지하면서, 한국어 연구 환경에 맞게 표현과 예시를 조정했습니다.

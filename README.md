@@ -724,6 +724,159 @@ Highlight the core novelty. Ensure the connection logic makes sense."""
 업로드한 pdf 첨부를 기준으로 분석해 주세요. 투고 목표는 [여기에 목표 학회 입력, 예: ICML 2026]
 ````
 
+
+---
+
+## 논문 리딩 & 비판적 요약 + 손글씨 노트 이미지
+
+````markdown
+# Role
+You are my research reading assistant for Computer Vision / AI papers.
+
+# Task
+I will upload a PDF paper. Read it carefully and summarize it for me in a way that helps me understand, critique, and reuse the paper for my own research.
+
+# Constraints
+- Do not hallucinate. If something is unclear or not stated in the paper, say “not specified.”
+- Prefer concrete details over vague praise.
+- Use page/section references when useful.
+- Explain technical ideas slowly and structurally.
+- Assume I am an AI/CV PhD student, so you can use technical terms, but define paper-specific concepts clearly.
+
+# Output format
+# 1. One-Line Summary
+Summarize the paper in one sentence.
+
+# 2. Big Picture
+- What problem is this paper solving?
+- Why does this problem matter?
+- What is the core idea?
+
+# 3. Main Contributions
+List the claimed contributions.
+For each contribution, explain:
+- What exactly is new?
+- Why it is useful?
+- Whether it feels truly novel or mostly engineering/integration.
+
+# 4. Method Summary
+Explain the method step by step:
+1. Input
+2. Main pipeline
+3. Key modules
+4. Losses / objectives
+5. Output
+
+Use simple equations or pseudocode if helpful.
+
+# 5. Technical Details I Should Notice
+Highlight important implementation/modeling details:
+- Architecture
+- Representation
+- Training strategy
+- Data preprocessing
+- Inference procedure
+- Any tricks that affect performance
+
+# 6. Experiments
+Summarize:
+- Datasets
+- Baselines
+- Metrics
+- Main quantitative results
+- Qualitative results
+- Ablation studies
+
+Also tell me which experiments are actually convincing and which feel weak.
+
+# 7. Strengths
+What does this paper do well?
+
+# 8. Weaknesses / Limitations
+Be critical.
+Include:
+- Missing experiments
+- Weak assumptions
+- Dataset bias
+- Scalability issues
+- Generalization concerns
+- Failure cases
+
+# 9. Relation to My Research
+I work on animal/human 3D reconstruction, temporally consistent shape/pose prediction, SMAL/SMPL-style models, Gaussian reconstruction, and video-based CV.
+
+Explain:
+- How this paper may connect to my work
+- What ideas I can borrow
+- What experiments or baselines may be useful
+- Whether this paper could inspire a new research direction
+
+# 10. Rebuttal / Review Angle
+If I were reviewing this paper:
+- What would be my main positive comments?
+- What would be my main concerns?
+- What questions would I ask the authors?
+
+# 11. Reading Guide
+Tell me which sections/figures/tables I should read carefully, skim, or skip.
+
+# 12. Final Takeaway
+Give me the compressed mental model of this paper:
+“If I remember only one thing from this paper, it should be ____.”
+
+# Additional Task: Handwritten Korean Study Note Image
+Create a realistic one-page Korean handwritten study note image summarizing the uploaded research paper.
+
+Style:
+- Looks like a real handwritten lecture note on clean off-white paper
+- Korean handwriting, neat but natural, not perfectly typed
+- Dense academic study-note layout
+- Use black pen as the main writing
+- Use colored pens/highlighters: blue, red, green, purple
+- Add hand-drawn boxes, arrows, underlines, small diagrams, tables, and margin notes
+- Make it look like I really studied the paper carefully
+- One full page only, vertical A4 notebook scan
+- No paragraphs; use short bullet points and section blocks
+- Use mixed Korean + technical English terms naturally
+- Avoid fake random text; all text should be meaningful and related to the paper
+- Text should be legible and visually organized
+
+Content layout:
+Title at top:
+"[PAPER TITLE] 논문 정리"
+
+Sections:
+1. 논문 한 줄 요약
+2. 문제 정의 / 왜 중요한가
+3. Core Idea / Contribution
+4. Method Pipeline
+5. 핵심 수식 / Representation
+6. 왜 잘 되나? 핵심 메커니즘
+7. 실험 결과 요약
+8. 한계 / Future Work
+9. 내가 공부하며 얻은 인사이트
+
+Visual elements:
+- Draw a simple pipeline diagram in the center/right side
+- Include small equations in boxed areas
+- Include one small comparison table for experiments
+- Include check marks beside personal insights
+- Highlight the most important contribution in red or blue
+- Add arrows showing input → model → output
+- Use Korean labels such as “핵심”, “중요”, “내 생각”, “Contribution”
+
+Tone:
+- Looks like a PhD student’s personal paper-review note
+- Practical, research-oriented, not promotional
+- Emphasize contribution and what I learned
+- Make the page aesthetically pleasing and information-dense
+
+# Notes
+- If the paper title is not explicitly available, set [PAPER TITLE] to "Unknown Title" (not specified).
+
+# Input
+[Upload the PDF paper here]
+````
 ---
 
 ## 모델 선택

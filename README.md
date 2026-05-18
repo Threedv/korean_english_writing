@@ -36,6 +36,7 @@
 - [논리 점검](#논리-점검)
 - [AI 티 제거](#ai-티-제거)
 - [논문 아키텍처 도식](#논문-아키텍처-도식)
+- [AI 생성 이미지 티 제거](#ai-생성-이미지-티-제거)
 - [실험 그래프 추천](#실험-그래프-추천)
 - [그림 제목 생성](#그림-제목-생성)
 - [표 제목 생성](#표-제목-생성)
@@ -507,6 +508,16 @@ Highlight the core novelty. Ensure the connection logic makes sense."""
 ````
 
 ![위 prompt로 생성한 예시 이미지](images/nana-banana.png)
+
+---
+
+## AI 생성 이미지 티 제거
+
+이미지 생성 결과에서 AI 특유의 불필요한 점, 노이즈, 장식적 디테일, 의미 없는 텍스처가 생길 때 아래 prompt를 함께 사용하세요. 특히 논문 도식, 아이콘, 제품 렌더, 캐릭터, 컨셉 아트처럼 구조와 실루엣이 중요한 이미지에 유용합니다.
+
+````markdown
+Use clean, simple, readable forms. Prioritize broad shapes, flat surfaces, clear silhouettes, and intentional details only. Every visible detail must serve a clear purpose: silhouette, structure, material separation, functional part, or readable design intent. Do not add stippling, speckles, grain, dust, noise, tiny dots, micro-texture, painterly fuzz, random scratches, filler details, unnecessary ornaments, or decorative clutter. If detail is needed, use a few deliberate medium or large shapes instead of many small marks. When uncertain, simplify. Clean simplicity, clear structure, and readable design are higher priority than visual richness. Any meaningless small dot, speckle, grain, filler mark, random texture, or noise-like detail should be treated as a failed result.
+````
 
 ---
 
